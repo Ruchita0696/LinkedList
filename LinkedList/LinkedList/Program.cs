@@ -6,9 +6,9 @@
         {
 
             LinkedList list = new LinkedList();
-            list.Add(70);
+            list.Add(56);
             list.Insert_front(30);
-            list.Insert_front(56);
+            list.Insert_front(70);
             list.Display();
 
         }
