@@ -61,8 +61,15 @@ namespace LinkedList
             Console.WriteLine("Inserted value is : " + data);
             return head;
         }
-        
-       
+        internal Node RemoveFirstNode()
+        {
+            if (head == null)
+            {
+                return null;
+            }
+            head = head.next;
+            return head;
+        }
         public void Display()
         {
             int i = 1;
