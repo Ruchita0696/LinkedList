@@ -29,11 +29,18 @@ namespace LinkedList
             }
             Console.WriteLine($"{node.data} is Inserted in Linked List\n");
         }
+        public void Insert_front(int data)
+        {
+            Node newNode = new Node(data);
+            newNode.next = head;
+            head = newNode;
+        }
         public void Display()
         {
             int i = 1;
             Node temp = head;
 
+            Console.WriteLine();
             if (temp == null)
             {
                 Console.WriteLine("LinkedList is Empty");
